@@ -34,7 +34,7 @@ def viz_target_dist():
     graph.set_ylabel('Density', fontsize=20)
     graph.set_yticklabels(graph.get_yticks(), size = 15)
     graph.text(train.song_popularity.mean()-2, .01, f'Mean = {round(train.song_popularity.mean(),2)}', rotation = 90, fontsize= 12, color='darkslateblue');
-    graph.text(train.song_popularity.median()-2, .01, f'Median = {round(train.song_popularity.mean(),2)}', rotation = 90, fontsize= 12, color='navy');
+    graph.text(train.song_popularity.median()-2, .01, f'Median = {round(train.song_popularity.median(),2)}', rotation = 90, fontsize= 12, color='navy');
     graph.set_xticklabels([-20,0,20,40,60,80,100], size = 15,)
     graph.legend(loc=0)
 
